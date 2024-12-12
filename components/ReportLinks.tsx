@@ -12,7 +12,7 @@ export function ReportLinks({ isApproved, isManagement, isAdmin }: ReportLinksPr
   };
 
   return (
-    <div className="absolute right-0  w-48 bg-white border border-gray-200 rounded-lg shadow-lg z-10">
+    <div className="absolute right-0  w-36 bg-white border border-gray-200 rounded-lg shadow-lg z-10">
       <div className="p-2">
         {isApproved && (
           <button
