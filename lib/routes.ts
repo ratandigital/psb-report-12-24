@@ -29,24 +29,24 @@ const routes = [
       label: 'Fixed Assets',
       icon: AsteriskIcon,
       color: "text-orange-700",
-      href: '/demo',
+      href: '#',
     },
     {
       label: 'Leave Management',
       icon: Music,
       color: "text-emerald-500",
-      href: '/demo',
+      href: '#',
     },
     {
       label: 'Bank Register',
       icon: TextIcon,
       color: "text-green-700",
-      href: '/demo',
+      href: '#',
     },
     {
       label: 'Weely Report',
       icon: TextIcon,
-      href: '/demo',
+      href: '#',
     },
    
   ];
