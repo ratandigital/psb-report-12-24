@@ -23,7 +23,7 @@ const routes = [
       label: 'Monthly Report',
       icon: TextIcon,
       color: "text-pink-700",
-      href: '/demo',
+      href: '#',
     },
     {
       label: 'Fixed Assets',
