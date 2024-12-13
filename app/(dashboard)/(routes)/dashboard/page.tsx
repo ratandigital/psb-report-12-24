@@ -7,7 +7,7 @@ import { Card } from "@/components/ui/card";
 import { cn } from "@/lib/utils";
 import axios from 'axios';
 import { tools } from "@/constants";
-import DropdownMenuBar from "@/components/DropdownMenuBar";
+
 
 export default function HomePage() {
   const [reports, setReports] = useState<any[]>([]); // Add type for reports if possible
@@ -33,13 +33,7 @@ export default function HomePage() {
 
   return (
     <div>
-      <div className="flex w-full justify-end">
-        <div className="mr-5"><DropdownMenuBar/></div>
-        <div><UserMenu/>
-
-        </div>
- 
-      </div>
+   
       <div className="mb-8 space-y-4">
         <h2 className="text-2xl md:text-4xl font-bold text-center mt-5">
           Top Collected Branch
