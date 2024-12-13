@@ -12,7 +12,13 @@ const Navbar = async () => {
      
     
     </div>
-      
+       <div className="flex w-full justify-end">
+        <div className="mr-5"><DropdownMenuBar/></div>
+        <div><UserMenu/>
+
+        </div>
+ 
+      </div>
    );
 }
  
