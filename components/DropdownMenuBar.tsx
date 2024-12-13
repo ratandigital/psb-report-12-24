@@ -39,9 +39,7 @@ export default async function DropdownMenuBar() {
           <Link href="/about" className="hover:bg-gray-700 p-2 rounded-md">
             About
           </Link>
-          <Link href="/services" className="hover:bg-gray-700 p-2 rounded-md">
-            Services
-          </Link>
+         
 
           <div className="relative group">
             <button className="flex items-center space-x-2 p-2 rounded-full bg-gray-800 hover:bg-gray-700">
