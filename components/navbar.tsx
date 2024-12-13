@@ -10,6 +10,8 @@ const Navbar = async () => {
     <div className="flex items-center p-4">
       <MobileSidebar/>
      
+    
+    </div>
       <div className="flex w-full justify-end">
         <div className="mr-5"><DropdownMenuBar/></div>
         <div><UserMenu/>
@@ -17,7 +19,6 @@ const Navbar = async () => {
         </div>
  
       </div>
-    </div>
    );
 }
  
