@@ -32,6 +32,13 @@ export default function HomePage() {
 
   return (
     <div>
+      <div className="flex w-full justify-end">
+        <div className="mr-5"><DropdownMenuBar/></div>
+        <div><UserMenu/>
+
+        </div>
+ 
+      </div>
       <div className="mb-8 space-y-4">
         <h2 className="text-2xl md:text-4xl font-bold text-center mt-5">
           Top Collected Branch
