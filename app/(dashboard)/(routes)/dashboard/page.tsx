@@ -7,6 +7,7 @@ import { Card } from "@/components/ui/card";
 import { cn } from "@/lib/utils";
 import axios from 'axios';
 import { tools } from "@/constants";
+import DropdownMenuBar from "@/components/DropdownMenuBar";
 
 export default function HomePage() {
   const [reports, setReports] = useState<any[]>([]); // Add type for reports if possible
