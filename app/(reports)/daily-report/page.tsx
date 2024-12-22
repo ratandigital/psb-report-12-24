@@ -66,6 +66,30 @@ const ReportsPage: React.FC = () => {
   const handleFilter = () => {
     fetchReports(1);
   };
+  const onDelete = async (id: string) => {
+    const confirmed = window.confirm("Are you sure you want to delete this transaction?");
+    if (!confirmed) return;
+  
+    try {
+      const response = await fetch(`/api/daily-transactions/${id}`, {
+        method: 'DELETE',
+      });
+  
+      if (response.ok) {
+        alert("Transaction deleted successfully.");
+        // Assuming you have `setReports` to manage state
+        setReports((prevReports) => prevReports.filter((report) => report.id !== id));
+      } else {
+        const errorData = await response.json();
+        alert(`Error: ${errorData.error || "Failed to delete transaction."}`);
+      }
+    } catch (error) {
+      console.error("Error deleting transaction:", error);
+      alert("An unexpected error occurred. Please try again.");
+    }
+  };
+  
+  
 
   const handleReset = () => {
     setFilters({
@@ -258,6 +282,7 @@ const ReportsPage: React.FC = () => {
       <th colSpan={1} rowSpan= {2} className="py-3 px-4 text-left text-xs font-semibold  tracking-wide border-r border-gray-300">Cash In Hand</th>
       <th colSpan={3} className="text-center py-3 px-4 text-left text-xs font-semibold  tracking-wide border-r border-b border-gray-300">Total Posting</th>
       <th colSpan={1} rowSpan= {2} className="py-3 px-4 text-left text-xs font-semibold  tracking-wide border-r border-gray-300">Cumulative Profit</th>
+      <th colSpan={1} rowSpan= {2} className="py-3 px-4 text-left text-xs font-semibold  tracking-wide border-r border-gray-300">Action</th>
   
              
     </tr>
@@ -316,7 +341,19 @@ const ReportsPage: React.FC = () => {
                         <td className="py-3 px-4 text-sm border-r border-gray-300">{report.totalCreditPosting}</td>
                         <td className="py-3 px-4 text-sm border-r border-gray-300">{report.totalCreditPosting + report.totalDebitPosting}</td>
                         <td className="py-3 px-4 text-sm border-r border-gray-300">{report.cumulativeProfile}</td>
-                       
+                        <td className="border border-gray-300 px-4 py-2">
+  {format(new Date(report.createdAt), 'yyyy-MM-dd') === format(new Date(), 'yyyy-MM-dd') ? (
+    <button
+      onClick={() => onDelete(report.id)}
+      className="bg-red-500 text-white px-3 py-1 rounded hover:bg-red-600"
+    >
+      Delete
+    </button>
+  ) : (
+    ''
+  )}
+</td>
+
                 </tr>
               ))}
             </tbody>
