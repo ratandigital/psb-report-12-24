@@ -1,4 +1,5 @@
 type Upazila = {
+  
   branchName: string;
   branchCode: string;
 }; // Define the Upazila type, matching the branchName and branchCode structure
@@ -22,96 +23,428 @@ const bangladeshData: BangladeshData = {
     districts: {
       "DHAKA": [
         {
-          branchName: "Head Office Dhaka",
-          branchCode: "1001"
+          "branchName": "Head Office Dhaka",
+          "branchCode": "1001"
         },
         {
-          branchName: "Dhaka Corporate Branch",
-          branchCode: "1010"
+          "branchName": "Dhaka Corporate Branch",
+          "branchCode": "1010"
         },
         {
-          branchName: "Dhaka District Office",
-          branchCode: "1007"
+          "branchName": "Dhaka District Office",
+          "branchCode": "1007"
         },
         {
-          branchName: "Dhamrai",
-          branchCode: "1002"
+          "branchName": "Dhamrai",
+          "branchCode": "1002"
         },
         {
-          branchName: "Keraniganj",
-          branchCode: "1004"
+          "branchName": "Keraniganj",
+          "branchCode": "1004"
         },
         {
-          branchName: "Savar",
-          branchCode: "1005"
+          "branchName": "Savar",
+          "branchCode": "1005"
         },
         {
-          branchName: "Nawabganj Dhaka",
-          branchCode: "1006"
+          "branchName": "Nawabganj Dhaka",
+          "branchCode": "1006"
         },
         {
-          branchName: "Dohar",
-          branchCode: "1003"
+          "branchName": "Dohar",
+          "branchCode": "1003"
         }
       ],
       "NARSINGDI": [
         {
-          branchName: "Raipura",
-          branchCode: "2205"
+          "branchName": "Raipura",
+          "branchCode": "2205"
         },
         {
-          branchName: "Belabo Narshingdi",
-          branchCode: "2201"
+          "branchName": "Belabo Narshingdi",
+          "branchCode": "2201"
         },
         {
-          branchName: "Monohardi",
-          branchCode: "2202"
+          "branchName": "Monohardi",
+          "branchCode": "2202"
         },
         {
-          branchName: "Shibpur",
-          branchCode: "2206"
+          "branchName": "Shibpur",
+          "branchCode": "2206"
         },
         {
-          branchName: "Narsingdi Sadar",
-          branchCode: "2203"
+          "branchName": "Narsingdi Sadar",
+          "branchCode": "2203"
         },
         {
-          branchName: "Palash",
-          branchCode: "2204"
+          "branchName": "Palash",
+          "branchCode": "2204"
         },
         {
-          branchName: "Norshingdi District Office",
-          branchCode: "2200"
+          "branchName": "Norshingdi District Office",
+          "branchCode": "2200"
         }
       ],
       "SHARIATPUR": [
         {
-          branchName: "Bhedarganj",
-          branchCode: "2401"
+          "branchName": "Bhedarganj",
+          "branchCode": "2401"
         },
         {
-          branchName: "Naria Shariatpur",
-          branchCode: "2404"
+          "branchName": "Naria Shariatpur",
+          "branchCode": "2404"
         },
         {
-          branchName: "Zajira",
-          branchCode: "2406"
+          "branchName": "Zajira",
+          "branchCode": "2406"
         },
         {
-          branchName: "Shariatpur Sadar",
-          branchCode: "2405"
+          "branchName": "Shariatpur Sadar",
+          "branchCode": "2405"
         },
         {
-          branchName: "Gosairhat Sariatpur",
-          branchCode: "2403"
+          "branchName": "Gosairhat Sariatpur",
+          "branchCode": "2403"
         },
         {
-          branchName: "Damudiya SHARIATPUR",
-          branchCode: "2402"
+          "branchName": "Damudiya SHARIATPUR",
+          "branchCode": "2402"
         },
         {
-          branchName: "Shariatpur District Office",
-          branchCode: "2400"
+          "branchName": "Shariatpur District Office",
+          "branchCode": "2400"
+        }
+      ],
+      "FARIDPUR": [
+        {
+          "branchName": "Saltha Faridpur",
+          "branchCode": "1109"
+        },
+        {
+          "branchName": "Boalmari",
+          "branchCode": "1103"
+        },
+        {
+          "branchName": "Nagarkanda",
+          "branchCode": "1107"
+        },
+        {
+          "branchName": "Madhukhali FARIDPUR",
+          "branchCode": "1106"
+        },
+        {
+          "branchName": "Alfadanga Faridpur",
+          "branchCode": "1101"
+        },
+        {
+          "branchName": "Sadarpur",
+          "branchCode": "1108"
+        },
+        {
+          "branchName": "Faridpur Sadar",
+          "branchCode": "1105"
+        },
+        {
+          "branchName": "Bhanga",
+          "branchCode": "1102"
+        },
+        {
+          "branchName": "Char Bhadrasan",
+          "branchCode": "1104"
+        },
+        {
+          "branchName": "Faridpur District Office",
+          "branchCode": "1100"
+        },
+        {
+          "branchName": "Faridpur Audit Office",
+          "branchCode": "9008"
+        }
+      ],
+      "RAJBARI": [
+        {
+          "branchName": "Rajbari Sadar",
+          "branchCode": "2305"
+        },
+        {
+          "branchName": "Pangsha",
+          "branchCode": "2304"
+        },
+        {
+          "branchName": "Kalukhale RAJBARI",
+          "branchCode": "2303"
+        },
+        {
+          "branchName": "Baliakandi",
+          "branchCode": "2301"
+        },
+        {
+          "branchName": "Goalunda",
+          "branchCode": "2302"
+        },
+        {
+          "branchName": "Rajbari District Office",
+          "branchCode": "2300"
+        }
+      ],
+      "TANGAIL": [
+        {
+          "branchName": "Ghatail",
+          "branchCode": "2605"
+        },
+        {
+          "branchName": "Delduar",
+          "branchCode": "2603"
+        },
+        {
+          "branchName": "Shakhipur",
+          "branchCode": "2611"
+        },
+        {
+          "branchName": "Bashail",
+          "branchCode": "2601"
+        },
+        {
+          "branchName": "Tangail Sadar",
+          "branchCode": "2612"
+        },
+        {
+          "branchName": "Gopalpur",
+          "branchCode": "2606"
+        },
+        {
+          "branchName": "Kalihati",
+          "branchCode": "2607"
+        },
+        {
+          "branchName": "Modhupur",
+          "branchCode": "2609"
+        },
+        {
+          "branchName": "Nagarpur",
+          "branchCode": "2610"
+        },
+        {
+          "branchName": "Dhanbari Tangail",
+          "branchCode": "2604"
+        },
+        {
+          "branchName": "Tangail District Office",
+          "branchCode": "2600"
+        }
+      ],
+      "MANIKGANJ": [
+        {
+          "branchName": "Saturia",
+          "branchCode": "1704"
+        },
+        {
+          "branchName": "Manikganj Sadar",
+          "branchCode": "1703"
+        },
+        {
+          "branchName": "Singair",
+          "branchCode": "1706"
+        },
+        {
+          "branchName": "Harirampur MANIKGANJ",
+          "branchCode": "1702"
+        },
+        {
+          "branchName": "Daulatpur Manikganj",
+          "branchCode": "1707"
+        },
+        {
+          "branchName": "Ghior",
+          "branchCode": "1701"
+        },
+        {
+          "branchName": "Shibalaya Manikganj",
+          "branchCode": "1705"
+        },
+        {
+          "branchName": "Manikganj District Office",
+          "branchCode": "1700"
+        }
+      ],
+      "GOPALGANJ": [
+        {
+          "branchName": "Gopalganj Sadar",
+          "branchCode": "1301"
+        },
+        {
+          "branchName": "Kasiani",
+          "branchCode": "1302"
+        },
+        {
+          "branchName": "Maksudpur",
+          "branchCode": "1304"
+        },
+        {
+          "branchName": "Kotalipara",
+          "branchCode": "1303"
+        },
+        {
+          "branchName": "Tungipara",
+          "branchCode": "1305"
+        },
+        {
+          "branchName": "Gopalganj District Office",
+          "branchCode": "1300"
+        }
+      ],
+      "GAZIPUR": [
+        {
+          "branchName": "Sreepur Gazipur",
+          "branchCode": "1205"
+        },
+        {
+          "branchName": "Kapasia",
+          "branchCode": "1203"
+        },
+        {
+          "branchName": "Gazipur Sadar",
+          "branchCode": "1201"
+        },
+        {
+          "branchName": "Kaliganj (GZPR)",
+          "branchCode": "1204"
+        },
+        {
+          "branchName": "Kaliakoir",
+          "branchCode": "1202"
+        },
+        {
+          "branchName": "Gazipur District Office",
+          "branchCode": "1200"
+        }
+      ],
+      "KISHOREGANJ": [
+        {
+          "branchName": "Bajitpur Kishoreganj",
+          "branchCode": "1502"
+        },
+        {
+          "branchName": "Bhairab",
+          "branchCode": "1503"
+        },
+        {
+          "branchName": "Hosainpur",
+          "branchCode": "1504"
+        },
+        {
+          "branchName": "Pakundia",
+          "branchCode": "1512"
+        },
+        {
+          "branchName": "Mithamain",
+          "branchCode": "1510"
+        },
+        {
+          "branchName": "Kishoreganj District Office",
+          "branchCode": "1500"
+        },
+        {
+          "branchName": "Katiadi KISHOREGANJ",
+          "branchCode": "1507"
+        },
+        {
+          "branchName": "Itna",
+          "branchCode": "1505"
+        },
+        {
+          "branchName": "Austogram",
+          "branchCode": "1501"
+        },
+        {
+          "branchName": "Nikli Kishoreganj",
+          "branchCode": "1511"
+        },
+        {
+          "branchName": "Karimganj Kishoreganj",
+          "branchCode": "1506"
+        },
+        {
+          "branchName": "Tarail",
+          "branchCode": "1513"
+        },
+        {
+          "branchName": "Kuliarchar Kishoreganj",
+          "branchCode": "1509"
+        }
+      ],
+      "NARAYANGONJ": [
+        {
+          "branchName": "Bandar",
+          "branchCode": "2002"
+        },
+        {
+          "branchName": "Sonargaon",
+          "branchCode": "2005"
+        },
+        {
+          "branchName": "Rupganj",
+          "branchCode": "2004"
+        },
+        {
+          "branchName": "Narayanganj Sadar",
+          "branchCode": "2003"
+        },
+        {
+          "branchName": "Araihazar",
+          "branchCode": "2001"
+        },
+        {
+          "branchName": "Narayanganj District Office",
+          "branchCode": "2000"
+        }
+      ],
+      "MADARIPUR": [
+        {
+          "branchName": "Shibchar MADARIPUR",
+          "branchCode": "1604"
+        },
+        {
+          "branchName": "Kalkini MADARIPUR",
+          "branchCode": "1601"
+        },
+        {
+          "branchName": "Madaripur Sadar",
+          "branchCode": "1602"
+        },
+        {
+          "branchName": "Madaripur District Office",
+          "branchCode": "1600"
+        }
+      ],
+      "MUNSHIGANJ": [
+        {
+          "branchName": "Tangibari",
+          "branchCode": "1806"
+        },
+        {
+          "branchName": "Serajdikhan",
+          "branchCode": "1804"
+        },
+        {
+          "branchName": "Gazaria",
+          "branchCode": "1801"
+        },
+        {
+          "branchName": "Lauhajang",
+          "branchCode": "1802"
+        },
+        {
+          "branchName": "Munshiganj Sadar",
+          "branchCode": "1803"
+        },
+        {
+          "branchName": "Sreenagar",
+          "branchCode": "1805"
+        },
+        {
+          "branchName": "Munshiganj District Office",
+          "branchCode": "1800"
         }
       ]
     }
