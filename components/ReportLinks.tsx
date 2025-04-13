@@ -15,6 +15,7 @@ export function ReportLinks({ isApproved, isManagement, isAdmin }: ReportLinksPr
     <div className="absolute right-0  w-36 bg-white border border-gray-200 rounded-lg shadow-lg z-10">
       <div className="p-2">
         {isApproved && (
+      <>
           <button
             onClick={() => openInNewWindow('/daily-report')}
             className="block px-4 py-2 text-gray-700 hover:bg-gray-100 rounded-md"
@@ -33,8 +34,10 @@ export function ReportLinks({ isApproved, isManagement, isAdmin }: ReportLinksPr
           >
             Aditional Interrest Calculator
           </button>
+         </>
         )}
         {isManagement && (
+        <>
           <button
             onClick={() => openInNewWindow('/reports')}
             className="block px-4 py-2 text-gray-700 hover:bg-gray-100 rounded-md"
@@ -53,6 +56,7 @@ export function ReportLinks({ isApproved, isManagement, isAdmin }: ReportLinksPr
           >
             Aditional Interrest Calculator
           </button>
+           </>
         )}
         {isAdmin && (
           <>
